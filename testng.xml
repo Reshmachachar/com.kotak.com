@@ -5,16 +5,16 @@
 		<listener class-name="com.kotak.utilities.ExtentListeners" />
 	</listeners>
 
-  <test  name="TestonChrome">
+ <test  name="TestonChrome">
   <parameter name="browser" value="chrome"></parameter>
     <classes>
       <class name="com.kotak.testCases.KotakHomePageTest"/>    </classes>
   </test>
   
-   <test  name="TestOnEdge">
+ <!--   <test  name="TestOnEdge">
   <parameter name="browser" value="edge"></parameter>
     <classes>
       <class name="com.kotak.testCases.KotakHomePageTest1"/>
      </classes>
-  </test>  
+  </test>  -->
 </suite> <!-- Suite -->
