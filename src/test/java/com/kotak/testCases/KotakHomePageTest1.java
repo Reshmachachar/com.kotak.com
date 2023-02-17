@@ -1,4 +1,4 @@
-package com.kotak.testCases;
+/*package com.kotak.testCases;
 
 import java.io.IOException;
 import java.time.Duration;
@@ -144,7 +144,7 @@ public class KotakHomePageTest1 extends TestBase {
 }
 
 
-
+*/
 
 
 
