@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 30.427 s - in TestSuite
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 68.868 s <<< FAILURE! - in TestSuite
+TC01_ExplorePoduct(com.kotak.testCases.KotakHomePageTest1)  Time elapsed: 27.456 s  <<< FAILURE!
+java.lang.AssertionError: expected [https://www.kotak.com/en/personal-banking/loans/personal-loan/personal-loan-emi-calculator.html123] but found [https://www.kotak.com/en/personal-banking/loans/personal-loan/personal-loan-emi-calculator.html]
+	at com.kotak.testCases.KotakHomePageTest1.TC01_ExplorePoduct(KotakHomePageTest1.java:47)
+

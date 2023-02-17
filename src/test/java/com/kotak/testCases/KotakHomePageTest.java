@@ -37,10 +37,10 @@ public class KotakHomePageTest extends TestBase {
 		//click on personal loan 
 		homepage.getPersonalLoan().click();
 		Assert.assertEquals(driver.getCurrentUrl(),homepage.personalLoanUrl);
-		//e.test.log(Status.INFO,"page Navigate Successfully ");
+		e.test.log(Status.INFO,"page Navigate Successfully ");
 		
 		LogoIsPresent();
-		//e.test.log(Status.INFO,"logo is present on personal loan page" );
+		e.test.log(Status.INFO,"logo is present on personal loan page" );
 	
 		
 		FooterIsPresent();
@@ -78,7 +78,7 @@ public class KotakHomePageTest extends TestBase {
 			double emiAmount=emi_calculator(principal,r,y1);
 			int value2 = (int)Math.round(emiAmount);
 			Assert.assertEquals(value1,value2,"Assertion on EMI amount not is successfull ");
-			//e.test.log(Status.INFO,"Assertion on EMI amount is successfull" );
+			e.test.log(Status.INFO,"Assertion on EMI amount is successfull" );
 
 			//for Principal assertion 
 			String princ=homepage.getPrincipal_amt().getText();
@@ -88,7 +88,7 @@ public class KotakHomePageTest extends TestBase {
 			int P_Amount=(int)Math.round(p);
 
 			Assert.assertEquals(PrincipalAmount,P_Amount,"Assertion on Principal amount is not successfull");
-			//e.test.log(Status.INFO,"Assertion on Principal amount is successfull" );
+			e.test.log(Status.INFO,"Assertion on Principal amount is successfull" );
 
 			//for interest payable 
 			String inter_pay=homepage.getInterest_payable().getText();
@@ -100,7 +100,7 @@ public class KotakHomePageTest extends TestBase {
 			String total=homepage.getTotal_payment().getText();
 			String totalAmt=total.replaceAll(",","");
 			Assert.assertEquals(Integer.parseInt(totalAmt),totalamount);
-			//e.test.log(Status.INFO,"assertion on total amount is successfull");
+			e.test.log(Status.INFO,"assertion on total amount is successfull");
 		
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -108,11 +108,11 @@ public class KotakHomePageTest extends TestBase {
 
 		//logo is present 
 		LogoIsPresent();
-		//e.test.log(Status.INFO,"logo is present on EMI page " );
+		e.test.log(Status.INFO,"logo is present on EMI page " );
 				
 		//footer display 
 		FooterIsPresent();
-		//e.test.log(Status.INFO," footer is present on EMI page " );
+		e.test.log(Status.INFO," footer is present on EMI page " );
 		
 
 	}
