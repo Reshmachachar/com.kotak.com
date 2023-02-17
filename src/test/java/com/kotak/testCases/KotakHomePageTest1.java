@@ -32,14 +32,14 @@ public class KotakHomePageTest1 extends TestBase {
 		//click on personal loan 
 		homepage.getPersonalLoan().click();
 		Assert.assertEquals(driver.getCurrentUrl(),homepage.personalLoanUrl);
-		ExtentListeners.test.log(Status.INFO,"page Navigate Successfully " );
+		//ExtentListeners.test.log(Status.INFO,"page Navigate Successfully " );
 		
 		LogoIsPresent();
-		ExtentListeners.test.log(Status.INFO,"logo is present on personal loan page" );
+		//ExtentListeners.test.log(Status.INFO,"logo is present on personal loan page" );
 	
 		
 		FooterIsPresent();
-		ExtentListeners.test.log(Status.INFO,"Footer is present on personal loan page" );
+		//ExtentListeners.test.log(Status.INFO,"Footer is present on personal loan page" );
 		
 
 		//click on EMI Calculator 
@@ -73,7 +73,7 @@ public class KotakHomePageTest1 extends TestBase {
 			double emiAmount=emi_calculator(principal,r,y1);
 			int value2 = (int)Math.round(emiAmount);
 			Assert.assertEquals(value1,value2,"Assertion on EMI amount not is successfull ");
-			ExtentListeners.test.log(Status.INFO,"Assertion on EMI amount is successfull" );
+			//ExtentListeners.test.log(Status.INFO,"Assertion on EMI amount is successfull" );
 
 			//for Principal assertion 
 			String princ=homepage.getPrincipal_amt().getText();
@@ -83,7 +83,7 @@ public class KotakHomePageTest1 extends TestBase {
 			int P_Amount=(int)Math.round(p);
 
 			Assert.assertEquals(PrincipalAmount,P_Amount,"Assertion on Principal amount is not successfull");
-			ExtentListeners.test.log(Status.INFO,"Assertion on Principal amount is successfull" );
+			//ExtentListeners.test.log(Status.INFO,"Assertion on Principal amount is successfull" );
 
 			//for interest payable 
 			String inter_pay=homepage.getInterest_payable().getText();
@@ -95,7 +95,7 @@ public class KotakHomePageTest1 extends TestBase {
 			String total=homepage.getTotal_payment().getText();
 			String totalAmt=total.replaceAll(",","");
 			Assert.assertEquals(Integer.parseInt(totalAmt),totalamount);
-			ExtentListeners.test.log(Status.INFO,"assertion on total amount is successfull");
+			//ExtentListeners.test.log(Status.INFO,"assertion on total amount is successfull");
 		
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -103,11 +103,11 @@ public class KotakHomePageTest1 extends TestBase {
 
 		//logo is present 
 		LogoIsPresent();
-		ExtentListeners.test.log(Status.INFO,"logo is present on EMI page " );
+		//ExtentListeners.test.log(Status.INFO,"logo is present on EMI page " );
 				
 		//footer display 
 		FooterIsPresent();
-		ExtentListeners.test.log(Status.INFO," footer is present on EMI page " );
+		//ExtentListeners.test.log(Status.INFO," footer is present on EMI page " );
 		
 
 	}
